@@ -19,12 +19,10 @@ import api from "@/lib/axios";
  * Response: { id, username, email, ..., accessToken }
  */
 export async function loginUser(username, password) {
-  // Send a POST request to /auth/login with the credentials
   const response = await api.post("/auth/login", {
     username,
     password,
   });
 
-  // response.data contains the user object with accessToken
   return response.data;
 }

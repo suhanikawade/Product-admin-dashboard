@@ -65,6 +65,7 @@ api.interceptors.response.use(
 
       // Redirect to login page (only in the browser)
       if (typeof window !== "undefined") {
+        // eslint-disable-next-line @next/next/no-location-assign-relative-destination
         window.location.href = "/login";
       }
     }
