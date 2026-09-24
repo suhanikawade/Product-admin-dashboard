@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Product Admin Dashboard
 
-## Getting Started
+A small admin dashboard built with Next.js for managing products using the DummyJSON API.
 
-First, run the development server:
+## Features finished
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Login page with username and password validation
+- Protected routes for authenticated users
+- Product list with image, title, category, price, rating, and stock
+- Responsive table layout on desktop and card layout on mobile
+- Search with debounce behavior
+- Category filter
+- Sorting by title, price, and rating
+- Pagination with page-size selector
+- Product detail page with reviews and not-found states
+- Add product form with validation
+- Edit product form with validation
+- Delete product flow with confirmation
+- Loading, empty, and error states
+- Shared Axios setup with token injection
+- URL-based filter/search/sort/page state
+- Indian Rupee (INR) price formatting
+- Safe image handling for external URLs to avoid runtime Next.js errors
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Next.js 16
+- React 19
+- Tailwind CSS
+- Axios
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup steps
 
-## Learn More
+1. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Start the project in development mode:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+3. Open the app in the browser:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```text
+   http://localhost:3000
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Log in with:
+
+   ```text
+   Username: emilys
+   Password: emilyspass
+   ```
+
+5. Create a production build:
+
+   ```bash
+   npm run build
+   ```
+
+6. Run the production build:
+
+   ```bash
+   npm run start
+   ```
+
+
